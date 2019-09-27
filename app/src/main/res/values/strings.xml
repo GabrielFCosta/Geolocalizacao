@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Geolocalizacao</string>
+    <string name="lati">Latitude</string>
+    <string name="longi">Longitude</string>
+    <string name="alti">Altitude</string>
+    <string name="press">Aperte aqui!</string>
+</resources>
