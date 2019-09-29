@@ -39,14 +39,14 @@ public class MainActivity extends Activity implements LocationListener{
         press.setText(R.string.wait);
         press.setEnabled(false);
 
-        try {
+        locationMan = (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
+        Criteria criteria = new Criteria();
+        criteria.setPowerRequirement(POWER_LOW);
+        criteria.setCostAllowed(false);
+        criteria.setAltitudeRequired(true);
+        provider = locationMan.getBestProvider(criteria,true);
 
-            locationMan = (LocationManager)this.getSystemService(Context.LOCATION_SERVICE);
-            Criteria criteria = new Criteria();
-            criteria.setPowerRequirement(POWER_LOW);
-            criteria.setCostAllowed(false);
-            criteria.setAltitudeRequired(true);
-            provider = locationMan.getBestProvider(criteria,true);
+        try {
 
             locationMan.requestLocationUpdates(provider, 5000, 0, this);
             //locationMan.requestSingleUpdate(provider,this,null);
@@ -57,6 +57,7 @@ public class MainActivity extends Activity implements LocationListener{
         } catch(IllegalArgumentException e){
             Toast.makeText(this,"Habilite permissão para localização e renicie aplicativo.", Toast.LENGTH_LONG).show();
         }
+
     }
 
     //Métodos da interface LocationListener.
