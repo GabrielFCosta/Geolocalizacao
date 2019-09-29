@@ -4,4 +4,5 @@
     <string name="longi">Longitude</string>
     <string name="alti">Altitude</string>
     <string name="press">Aperte aqui!</string>
+    <string name="wait">Aguarde atualização.</string>
 </resources>
