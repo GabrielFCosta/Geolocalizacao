@@ -4,7 +4,7 @@
 
     <!--
     Permissões para utilizar Internet e serviços de localização:
-    ACCESS_FINE_LOCATION => GPS
+    ACCESS_FINE_LOCATION => GPS + coarse location
     ACCESS_COARSE_LOCATION => rede e Wifi
     -->
     <uses-permission android:name="android.permission.INTERNET" />

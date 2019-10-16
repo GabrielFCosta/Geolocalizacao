@@ -49,7 +49,6 @@ public class MainActivity extends Activity implements LocationListener{
         try {
 
             locationMan.requestLocationUpdates(provider, 5000, 0, this);
-            //locationMan.requestSingleUpdate(provider,this,null);
 
         } catch (SecurityException e) {
             Toast.makeText(this,"SecurityException", Toast.LENGTH_LONG ).show();
