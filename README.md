@@ -44,7 +44,7 @@
 > Uma instância de Location pode conter informações de latitude, longitude, data e hora e outras informações, como direção, altitude e velocidade.
 > 
 > Todo local gerado pelo LocationManager tem por padrão latitude, longitude e carimbo de data / hora válidos, todos os outros parâmetros são opcionais.
-#### Fontes:
+### Fontes:
 ##### https://developer.android.com/guide/topics/location/strategies
 ##### https://developer.android.com/reference/android/location/LocationListener
 ##### https://developer.android.com/reference/android/location/LocationManager
